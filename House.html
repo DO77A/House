@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('House2.png');
+            background-repeat: repeat;
+            background-position: calc(50% - 1280px) calc(50% - 800px);
+        }
+
+        .center-image {
+            position: absolute;
+            z-index: 1;
+            width: 1280px;
+            height: 800px;
+            background-image: url('House.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center-image"></div>
+    </div>
+</body>
+</html>
